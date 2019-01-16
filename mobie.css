@@ -1,0 +1,392 @@
+/* Add a gray background color and some padding to the footer */
+a {
+	text-decoration: none;
+	color: white;
+}
+#conect, #menu{
+	margin-bottom: 0; 
+}    
+#conect .hotline{
+	margin-top: 3%;
+	margin-left: 30%;
+	background-color: #2c7eb6;
+	width: 110%;
+	color: white;
+}
+#conect .hotline a{
+	margin-left: 5px;
+	font-size: 17px;
+}
+#conect .hotline .reng{
+	display: inline-block;
+	border: 1px solid #2c7eb6;
+	border-radius: 50%;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	width: 17%;
+	height: 17%;
+	animation: around 0.8s infinite backwards;
+}
+#conect .hotline a{
+	color: white;
+	text-decoration: none;
+}
+@keyframes around {
+	0%{ transform: scale(1,1); }
+	100%{ transform: scale(1.2,1.2); }
+}
+#conect .hotline .glyphicon-earphone{
+	color: white;
+}
+#menu{
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  background-color: white;
+}
+
+#menu ul{
+	margin-left: 15%;
+	width: 740px;
+}
+#menu ul li{
+	margin-left: 10px;
+	width: 17%;
+}
+#menu ul li.active a{
+	border-bottom: 3px solid yellow;
+}
+#menu ul li a:hover{
+	border-bottom: 3px solid yellow;
+}
+#menu ul li a{
+	padding-top: 40px;
+	color: black;
+	text-align: center;
+	font-size: 16px;
+	padding: 30px 0;
+}
+#menu .sreach{
+	margin-top: 15px;
+	display: inline-block;
+	float: right;
+}
+#menu input[type=text] {
+	color: black;
+    padding: 6px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-top: 8px;
+    font-size: 17px;
+}
+.content_full{
+	background-color: #f5f5f5;
+}
+.list_product{
+	height: 375px;
+	border: 1px solid #d9d9d9;
+
+}
+.list_product ul{
+	background-color: white;
+}
+.list_product ul li a{
+	padding: 15px;
+	color: black;
+	height: 100%;
+	border-bottom: 1px solid #e6e6e6;
+}
+.list_product span{
+	margin-right: 10px;
+}
+.list_product .glyphicon-triangle-right{
+	float: right;
+}
+.list_product a:hover{
+	background-color: white;
+}
+.list_product .list{
+	background-color: #e6e6e6;
+	margin-bottom: 39px;
+	font-size: 17px;
+}
+.list_product ul{
+	height: 100%;
+}
+.list_product ul li{
+	height: 15%;
+}
+.header_box::after{
+    content: "";
+    width: 19px;
+    height: 100%;
+    float: right;
+    position: absolute;
+    left: 100%;
+    background-size: cover;
+}
+.sale .col-sm-2,.phone_product .col-sm-2,.megaphone_product .col-sm-2,.tablet_product .col-sm-2,.laptop_product .col-sm-2{
+	margin-right: 12.5px;
+	width: 230px;
+	background-color: white;
+}
+.sale .col-sm-2{
+	padding: 1px;
+	height: 350px;
+	border-right: 0.5px solid #d9d9d9;
+	margin-right: 5px;
+	border-bottom: 0.5px solid #d9d9d9;
+}
+.sale .sale1{
+	height:350px;
+	border-bottom: 0.5px solid #d9d9d9;
+	position: relative;
+	overflow: hidden;
+}
+.sale .sale_img{
+	height: 180px;
+	overflow: hidden;
+	background-size: cover;
+	padding: 0 7%;
+}
+.sale .sale_img img{
+	margin-top: 5px;
+	height: 100%;
+}
+.sale .sale_img img:hover{
+	margin-top: 0px;
+}
+.sale p{
+	margin-bottom: 0;
+	word-break:keep-all;
+	color: black;
+	height: 40px;
+}
+.sale .price{
+	display: inline-block;
+	float: left;
+	height: 0;
+}
+.sale .price .price_sale{
+	text-align: left;
+	margin-top: 10px;
+	padding-left: 5px;
+	font-size: 19px;
+	color: #ff1a1a;
+}
+.sale .price .price_old{
+	text-align: left;
+	padding-left: 5px;
+	color: #a6a6a6;
+}
+.sale .detail{
+	border: 0.5px solid red;
+	border-radius: 3px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin-top: 17%;
+	font-size: 17px;
+	margin-right: 5px;
+	padding:6px 5px 4px 5px;
+	overflow: hidden;
+	color: red;
+}
+.sale .detail1{
+	position: absolute;
+	top: 0;
+	left: 155px;
+	float: right;
+	width: 125px;
+	height: 40px;
+	padding:6px 5px 4px 5px;
+	background-color: red;
+	border: 1px solid #ff1a1a;
+	border-radius: 3px;
+	transition: left .5s ease;
+	color: white;
+}
+.sale .col-sm-2:hover .detail1{
+	left: 0;
+	color: white;
+}
+.sale .like {
+	clear: both;
+	padding-left: 15px;
+	padding-top: 8px;
+}
+.sale .row2 .sale1{
+	border-bottom: 0;
+}
+.sale .promotion{
+	position: absolute;
+	left: -40px;
+	top: 20px;
+	width: 170px;
+	height: 45px;
+	background-color: #ed3237;
+	overflow: hidden;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 31px;
+	text-align: center;
+	text-transform: uppercase;
+	transform: rotate(-45deg);
+	transition: all 0.5s linear 0s;
+	padding: 6px 0;
+}
+
+#phone .col-sm-2, #megaphone .col-sm-2,#tablet .col-sm-2,#laptop .col-sm-2{
+	padding: 1px 0;
+	height: 400px;
+}
+.list_company_phone .col-sm-2, .list_company_megaphone .col-sm-2,.list_company_tablet .col-sm-2,.list_company_laptop .col-sm-2{
+	height: 50px;
+}
+#phone .phone_img, #megaphone .megaphone_img,#tablet .tablet_img,#laptop .laptop_img{
+	width: 220px;
+	margin-left: 4px;
+	margin-top: 5px;
+	border: 0.5px solid #d9d9d9;
+	border-radius: 5px;
+	height: 219px;
+}
+#phone p, #megaphone p, #tablet p, #laptop p{
+	margin-top: 5px;
+	word-break:keep-all;
+	width: 215px;
+	height: 31px;
+}
+#phone .price, #megaphone .price, #tablet .price,#laptop .price{
+	height: 44px;
+}
+#phone .price_sale, .price_old{
+	text-align: left;
+	padding-left: 15px;
+}
+#megaphone .price_sale, .price_old{
+	text-align: left;
+	padding-left: 15px;
+}
+#tablet .price_sale, .price_old{
+	text-align: left;
+	padding-left: 15px;
+}
+#laptop .price_sale, .price_old{
+	text-align: left;
+	padding-left: 15px;
+}
+#phone .price_sale, #megaphone .price_sale,#tablet .price_sale,#laptop .price_sale{
+	font-size: 17px;
+	color: red;
+}
+#phone .price_old, #megaphone .price_old,#tablet .price_old, #laptop .price_old{
+	color: #a6a6a6;
+}
+#phone .like, #megaphone .like,#tablet .like, #laptop .like{
+	margin-top: 5px;
+	padding-left: 15px;
+	text-align: left;
+}
+#phone .cart, #megaphone .cart, #tablet .cart, #laptop .cart{
+	position: relative;
+	height: 50px;
+	bottom: 0;
+}
+#phone .glyphicon-shopping-cart, #megaphone .glyphicon-shopping-cart,#tablet .glyphicon-shopping-cart,#laptop .glyphicon-shopping-cart{
+	font-size: 25px;
+	position: absolute;
+	top:12px;
+	left: 25px;
+}
+#phone .cart p, #megaphone .cart p, #tablet .cart p, #laptop .cart p{
+	display: inline-block;
+	width: 150px;
+	position: absolute;
+	top:10px;
+	left: 53px;
+}
+#phone .col-sm-2:hover .cart, #megaphone .col-sm-2:hover .cart,#tablet .col-sm-2:hover .cart,#laptop .col-sm-2:hover .cart{
+	background-color: red;
+	color: white;
+}
+#phone .col-sm-2:hover, #megaphone .col-sm-2:hover,#tablet .col-sm-2:hover,#laptop .col-sm-2:hover{
+	border: 1px solid red;
+}
+.accessories_product .col-sm-3{
+	background-color: white;
+	height: 200px;
+	border-right: 0.5px solid #d9d9d9;
+	text-align: left;
+	padding: 0 22.5px;
+}
+.accessories_product .accessories_header{
+	font-size:18px;
+	text-align:center;
+	margin-top:20px;
+	height:45px;
+}
+.accessories_product .detail{
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	background-size: cover;
+	margin-right: 20px;
+	display: inline-block;
+}
+.accessories_product .col-sm-3:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.carousel-inner{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  min-height: 200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  	.carousel-caption {
+    	display: none; 
+  	}
+	#conect .hotline{
+	  	margin-top: 1.5%;
+	  	margin-left: 3%;
+	  	width: 50%;
+  	}
+  	#menu{
+  		/*height: 0;*/
+  	}
+  	#menu ul{
+  		margin-left: 0;
+  		/*height: 0;*/
+  	}
+  	#menu ul li{
+  		/*height: 0;*/
+  		margin-left: 0;
+  		width: 100%;
+  		border-bottom: 1px solid #cccccc;
+  	}
+  	#menu ul li a{
+  		/*height: 0;*/
+  		text-align: left;
+  	}
+  	#menu .sreach{
+  		float: left;
+  		width: 100%;
+  	}
+	#menu input[type=text] {
+	    float: left;
+	    display:inline-block;
+	    text-align: left;
+	    width: 80%;
+	    margin: 0;
+	    padding: 14px;
+	}
+
+}

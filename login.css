@@ -1,0 +1,143 @@
+body{
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+h1{
+	margin-top: 10%;
+}
+#conect, #menu{
+	margin-bottom: 0; 
+}    
+#conect .hotline{
+	margin-top: 3%;
+	margin-left: 30%;
+	background-color: #2c7eb6;
+	width: 110%;
+	color: white;
+}
+#conect .hotline a{
+	margin-left: 5px;
+	font-size: 17px;
+}
+#conect .hotline .reng{
+	display: inline-block;
+	border: 1px solid #2c7eb6;
+	border-radius: 50%;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	width: 17%;
+	height: 17%;
+	animation: around 0.8s infinite backwards;
+}
+#conect .hotline a{
+	color: white;
+	text-decoration: none;
+}
+@keyframes around {
+	0%{ transform: scale(1,1); }
+	100%{ transform: scale(1.2,1.2); }
+}
+#conect .hotline .glyphicon-earphone{
+	color: white;
+}
+#menu{
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  background-color: white;
+}
+
+#menu ul{
+	margin-left: 15%;
+	width: 740px;
+}
+#menu ul li{
+	margin-left: 10px;
+	width: 17%;
+}
+#menu ul li.active a{
+	border-bottom: 3px solid yellow;
+}
+#menu ul li a:hover{
+	border-bottom: 3px solid yellow;
+}
+#menu ul li a{
+	padding-top: 40px;
+	color: black;
+	text-align: center;
+	font-size: 16px;
+	padding: 30px 0;
+}
+#menu .sreach{
+	margin-top: 15px;
+	display: inline-block;
+	float: right;
+}
+#menu input[type=text] {
+	color: black;
+    padding: 6px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-top: 8px;
+    font-size: 17px;
+}
+.col-1, .col-2{
+	display: inline-block;
+	width: 50%;
+}
+.col-1{
+	float: left;
+	border-right: 1px solid #8c8c8c;
+	padding-top: 15px;
+}
+.col-2{
+	float: right;
+	padding: 2.5% 0 0 2%;
+}
+.login_form input[type=text], input[type=password]{
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f2f2f2;
+}
+
+.login_form input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+  width: 60%;
+}
+#pass{
+	margin-left: 11%;
+}
+#name{
+	margin-left: 6%; 
+}
+label{
+	text-align: left;
+	margin-right: 10%;
+}
+.form-group{
+	text-align: left;
+}
+#submit{
+	clear: both;
+	margin-left: 26%;
+}
+#submit button{
+	margin-left: 15%;
+	margin-bottom: 8px;
+}
+#face{
+	background-color: #337ab7;
+	color: white;
+	width: 30%;	
+}
+#gmail{
+	color: white;
+	background-color: #d34836;
+	width: 30%;
+	margin-left: 10px;
+}

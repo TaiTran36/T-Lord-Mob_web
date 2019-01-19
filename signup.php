@@ -1,3 +1,4 @@
+<?php include('server/server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,62 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="stylesheet" type="text/css" href="errors.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="content_full">
-		<div class="header">
-			<nav class="navbar navbar-inverse" id="conect">
-		  		<div class="container-fluid">
-		    		<div class="navbar-header">
-		      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			        		<span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>                        
-				      	</button>
-		      			<button class="btn hotline">
-		      				<div class="reng">
-			      				<span class="glyphicon glyphicon-earphone"></span>
-			      			</div>
-			      			<a href="#">HOTLINE : 19001989</a>
-		      			</button>
-		    		</div>
-				    <div class="collapse navbar-collapse" id="myNavbar">
-				      	<ul class="nav navbar-nav navbar-right">
-				      		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng</a></li>
-				      		<li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
-				        	<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
-				      	</ul>
-				    </div>
-		  		</div>
-			</nav>
-			<nav class="navbar" id="menu">
-		  		<div class="container-fluid">
-		    		<div class="navbar-header">
-		      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myMenubar">
-			        		<span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>                        
-				      	</button>
-		      				<a href="#">Mobie</a>
-		    		</div>
-				    <div class="collapse navbar-collapse" id="myMenubar">
-				      	<ul class="nav navbar-nav">
-				        	<li class="active"><a href="#">TRANG CHỦ</a></li>
-				        	<li><a href="#">VỀ CHÚNG TÔI</a></li>
-				        	<li><a href="#">SẢN PHẨM</a></li>
-				        	<li><a href="#">TIN TỨC</a></li>
-				        	<li><a href="#">LIÊN HỆ</a></li>
-				      	</ul>
-				      	<div class="sreach">
-				     	 	<input type="text" placeholder="Search..">
-				     	 	<div class="search_icon" style="display: inline-block; "><span class="glyphicon glyphicon-search" style="background-color: "></span></div>
-				     	</div>
-				    </div>
-		  		</div>
-			</nav>
-		</div>
-	</div>
+	<?php include("header_custom.php"); ?>
 	<div class="container">
 		<div class="col-sm-12" style="height: 800px;">
 			<div class="row">
@@ -71,7 +21,8 @@
 					<h1>ĐĂNG KÍ TÀI KHOẢN</h1>
 				</div>
 				<div class="col-sm-12 signup_form" style="margin: 50px 0% 0% 0%;text-align: center;">
-					<form>
+					<form action="signup.php" method="post">
+						<?php include('errors/errors.php'); ?>
 						<div class="col-1">
 							<div class="form-group">
 								<label>Tên tài khoản (*)</label>
@@ -85,7 +36,7 @@
 					      		</select>	
 							</div>
 							<div class="form-group">
-								<div class="col-sm-2" >
+						      	<div class="col-sm-2" >
 									<label>Ngày</label>
 									<select id="day" name="select_day" class="form-control">
 						      			<option value="day1">1</option>
@@ -241,12 +192,12 @@
 							</div>
 							<div class="form-group">
 								<label>Nhập lại mật khẩu (*)</label>
-								<input type="password" class="form-control" name="password_confim">
+								<input type="password" class="form-control" name="password_confirm">
 							</div>
 						</div>
 						<div class="form-group">
             				<button type="submit" name="signup" class="btn btn-primary btn-lg">Đăng kí</button>
-            				<p class="sign">Bạn đã có tài khoản. <a href="" style="color: blue; text-decoration: none;">Đăng nhập</a> ngay</p>
+            				<p class="sign">Bạn đã có tài khoản. <a href="login.php" style="color: blue; text-decoration: none;">Đăng nhập</a> ngay</p>
             				<p class="sign">Hoặc đăng kí bằng </p>
         				</div>
 					</form>

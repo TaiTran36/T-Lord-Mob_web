@@ -1,3 +1,4 @@
+<?php include('server/server.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,60 +11,9 @@
     <link rel="stylesheet" type="text/css" href="mobie.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body>
-	<div class="content_full">
-		<div class="header">
-			<nav class="navbar navbar-inverse" id="conect">
-		  		<div class="container-fluid">
-		    		<div class="navbar-header">
-		      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			        		<span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>                        
-				      	</button>
-		      			<button class="btn hotline">
-		      				<div class="reng">
-			      				<span class="glyphicon glyphicon-earphone"></span>
-			      			</div>
-			      			<a href="#">HOTLINE : 19001989</a>
-		      			</button>
-		    		</div>
-				    <div class="collapse navbar-collapse" id="myNavbar">
-				      	<ul class="nav navbar-nav navbar-right">
-				      		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng</a></li>
-				      		<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
-				        	<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
-				      	</ul>
-				    </div>
-		  		</div>
-			</nav>
-			<nav class="navbar" id="menu">
-		  		<div class="container-fluid">
-		    		<div class="navbar-header">
-		      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myMenubar">
-			        		<span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>                        
-				      	</button>
-		      				<a href="#">Mobie</a>
-		    		</div>
-				    <div class="collapse navbar-collapse" id="myMenubar">
-				      	<ul class="nav navbar-nav">
-				        	<li class="active"><a href="#">TRANG CHỦ</a></li>
-				        	<li><a href="#">VỀ CHÚNG TÔI</a></li>
-				        	<li><a href="#">SẢN PHẨM</a></li>
-				        	<li><a href="#">TIN TỨC</a></li>
-				        	<li><a href="#">LIÊN HỆ</a></li>
-				      	</ul>
-				      	<div class="sreach">
-				     	 	<input type="text" placeholder="Search..">
-				     	 	<div class="search_icon" style="display: inline-block; "><span class="glyphicon glyphicon-search" style="background-color: "></span></div>
-				     	</div>
-				    </div>
-		  		</div>
-			</nav>
-		</div>
-		<div class="container" style="margin-top: 50px;">
+<body style="background-color: #f5f5f5;">
+	<?php include('header_custom.php'); ?>
+	<div class="container" style="margin-top: 50px;">
 			<div class="row">
 				<div class="col-sm-4" style="width: 320px;padding: 0">
 				  	<div class="list_product">
@@ -121,23 +71,12 @@
 					        	<img src="img/img_slideshow/slide4.jpg" alt="Image"  style="height:375px">      
 					        </div>
 					    </div>
-
-	      <!-- Left and right controls -->
-	    <!--   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-	        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	        <span class="sr-only">Previous</span>
-	      </a>
-	      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-	        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	        <span class="sr-only">Next</span>
-	      </a> -->
 	    			</div>
 	 			</div>
 	 
 			</div>
 			<hr>
 	</div>
-
 	<div class="container">    
 	  	<br>
 	  	<div class="row">

@@ -1,0 +1,8 @@
+.errors{
+	margin-left: 40%;
+}
+.errors p{
+	text-align:left;
+	width: 50%;
+	color: red;
+}

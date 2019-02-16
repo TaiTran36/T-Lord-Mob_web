@@ -1,0 +1,89 @@
+#phone a{
+	text-decoration: none;
+}
+.phone_product .col-sm-2{
+	margin-right:10px;
+	width: 230px;
+	background-color: white;
+	padding: 1px 0;
+	height: 400px;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+.phone{
+	position: relative;
+}
+.list_company_phone .col-sm-2{
+	height: 50px;
+}
+/*#phone a{
+	text-decoration: none;
+	color: black;
+}*/
+#phone .phone_img{
+	width: 220px;
+	margin-left: 4px;
+	margin-top: 15px;
+	border-radius: 5px;
+	padding-top: 10px;
+	height: 238px;
+	transition: padding-top 0.3s;
+}
+#phone .col-sm-2:hover .phone_img{
+	padding-top: 0;
+}
+#phone p{
+	margin-top: 5px;
+	word-break:keep-all;
+	width: 215px;
+	height: 31px;
+	color: black;
+}
+#phone .price{
+	height: 20px;
+}
+#phone .price_sale{
+	text-align: left;
+	padding-left: 15px;
+}
+#phone .price_sale{
+	font-size: 17px;
+	color: red;
+}
+#phone .price_old{
+	color: #a6a6a6;
+}
+#phone .like{
+	margin-top: 5px;
+	padding-left: 15px;
+	text-align: left;
+}
+#phone .cart{
+	position: relative;
+	height: 44px;
+	bottom: 0;
+}
+#phone .glyphicon-shopping-cart{
+	font-size: 25px;
+	position: absolute;
+	top:12px;
+	left: 25px;
+}
+#phone .cart p{
+	display: inline-block;
+	width: 150px;
+	position: absolute;
+	top:10px;
+	left: 53px;
+}
+#phone .col-sm-2:hover .cart{
+	background-color: red;
+	color: white;
+}
+#phone .col-sm-2:hover .cart p{
+	color: white;
+}
+#phone .col-sm-2:hover{
+	border: 1px solid red;
+}
